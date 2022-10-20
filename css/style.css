@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;    
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+
+main{
+    height: 80vh;
+    width: 95vw;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+main article.square{
+    border: 1px solid black;
+    height: calc(80vh / 4 - 20px) ;
+    width: calc(95vw / 7 - 6px);
+    background-color: purple;
+    margin-left: 3px;
+    margin-top: 10px;
+}

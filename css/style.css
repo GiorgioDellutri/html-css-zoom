@@ -5,14 +5,15 @@
 }
 
 body{
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: black;    
 }
 
 .flex{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
+    align-content: center;
 }
 
 main{
@@ -22,17 +23,17 @@ main{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 1000px;
+    z-index: 0;
 }
 
 main article.square{
     position: relative;
     border: 1px solid black;
-    height: calc(80vh / 4 - 30px);
-    width: calc(90vw / 7 - 6px);
+    height: 10rem;
+    width: 15rem;
     margin-left: 3px;
     margin-bottom: 15px;
-    background-color: lightpink;
+    max-height: 15rem;
 }
 
 main div.box-name{
@@ -49,7 +50,31 @@ main article.square i,
     font-size: 0.7rem;
 }
 
-main article.square img{
-    height: 100%;
-    width: 100%;
+main article.square {
+    background-image: url(https://picsum.photos/200);
+    background-position: bottom;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+header .button{
+    background-color: rgba(128, 128, 128, 0.397);
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+header div.button-box .speaker{
+    margin-left: 3px;
+}
+
+header div.button-box{
+    position: absolute;
+    top: 0;
+    right: 0;
+
 }
